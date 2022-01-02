@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "pacifico", serif;
+  overflow: hidden;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  position: relative;
+  font-size: 100px;
+  text-align: center;
+
+  background: linear-gradient(135deg, orange, orange 60%, cyan);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgb(0, 0, 0, 0.1);
+}
+
+h1:before,
+h1:after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: attr(data-heading);
+}
+
+h1:before {
+  color: Khaki;
+  -webkit-animation: rb-rotateA 5s infinite; /* Safari 4+ */
+  -moz-animation: rb-rotateA 5s infinite; /* Fx 5+ */
+  -o-animation: rb-rotateA 5s infinite; /* Opera 12+ */
+  animation: rb-rotateA 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+h1:after {
+  color: Gold;
+  -webkit-animation: rb-rotateB 5s infinite; /* Safari 4+ */
+  -moz-animation: rb-rotateB 5s infinite; /* Fx 5+ */
+  -o-animation: rb-rotateB 5s infinite; /* Opera 12+ */
+  animation: rb-rotateB 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes rb-rotateA {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-moz-keyframes rb-rotateA {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes rb-rotateA {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rb-rotateA {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes rb-rotateB {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-moz-keyframes rb-rotateB {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes rb-rotateB {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rb-rotateB {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
